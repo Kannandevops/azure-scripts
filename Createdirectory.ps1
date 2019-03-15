@@ -1,1 +1,0 @@
-New-Item -Path "E:\" -Name "kannan" -ItemType "directory"
