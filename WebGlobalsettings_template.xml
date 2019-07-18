@@ -1,0 +1,9 @@
+<GlobalAppSettings ObjectRepository="provider=sqloledb;server=JDA-SQL;database=demo_wfm_or;uid=hu_demo_wfm;pwd=69WtDESEzneC8vX3" __ImportExportDirectory="\\JDA-APP\ImportExport" ServerMode="release" Build="02.103.3379.00" IsQE="n">
+  <NameSpace name="ESO-DEMO" __TaskQueueStore="\\JDA-APP\AsynchQueueStore" __ResolvedHostName="azpoc.westus.cloudapp.azure.com" __PortalSiteID="7" __PortalName="JDA" __ClientPollInterval="60000" __ImportExportDirectory="\\JDA-APP\ImportExport" __ImportWebserverURL="http://azpoc.westus.cloudapp.azure.com" __WaveTrace="off" __WaveTranslation="off" __DefaultLanguage="English" __Protocol="http" __WaveSecurityCheck="off" __AllowPangeaAccess="false" __ApeSysSqlTimeoutOverride="60" POSAppServerURL="azpoc.westus.cloudapp.azure.com" __POSFileShareRoot="\\JDA-APP\xmlfiles" __WaveDebug="off" __SolverServerAddresses="localhostfqdn:16000" __WaveErrorTrapping="on" __WaveAutoLogon="off" __QueryTimeoutOverride="60" __OrfCompression="off" __UseCompression="off" __UseGHTM="off" __PDFServerURL="http://localhostfqdn/services/PDFGenerator/CreatePDF.aspx" __ShelfLabelPDFServerURL="http://localhostfqdn:8080" __SMTPServer="localhost" __AuxilliaryAssemblyDirectory="C:\RedPrairieRetail\DefaultInstance\DomainModel\" __HttpOnlyCookie="n">
+    <__WaveDatabaseConnection value="provider=sqloledb;server=JDA-SQL;database=demo_wfm;uid=hu_demo_wfm;pwd=69WtDESEzneC8vX3" />
+    <__WaveDatamartConnection value="provider=sqloledb;server=JDA-SQL;database=demo_wfm_wh;uid=hu_demo_wfm;pwd=69WtDESEzneC8vX3" />
+    <__WaveWebposConnection value="provider=sqloledb;server=JDA-SQL;database=demo_wfm_pos;uid=hu_demo_wfm;pwd=69WtDESEzneC8vX3" />
+    <__WaveArchiveConnection value="Provider=sqloledb;server=JDA-SQL;database=demo_wfm_archive;uid=hu_demo_wfm;pwd=69WtDESEzneC8vX3" />
+    <__ReadonlyConnection value="Provider=sqloledb;server=JDA-SQL;database=demo_wfm;uid=demo_wfm_crp;pwd=fz7eft63HhD6DKeE" />
+  </NameSpace>
+</GlobalAppSettings>

@@ -1,0 +1,23 @@
+﻿
+
+<log4rad>
+
+	<appenders>
+		<file_appender id="Errors" base_file_name="Path" roll_size="10000000" roll_count="20" columns="TIMESTAMP,TYPE,MESSAGE,SOURCE,STACK_TRACE,SQL"/>
+	</appenders>
+
+	<event_source_rules>
+
+<event_source prefix=""><rule level="ERROR" appender="Errors" /> </event_source>
+<event_source prefix="Platform.RadBODOG.ContextMan.GetContext"><rule level="IGNORE" appender="Errors"/>	</event_source>
+<event_source prefix="Platform.RadBODOG.BODOG.GetAppSetting"><rule level="IGNORE" appender="Errors"/>	</event_source>
+<event_source prefix="Platform.RadBODOG2.WavesetFields.get_Item"><rule level="IGNORE" appender="Errors"/> </event_source>
+<event_source prefix="Platform.RadBODOG2.WavesetField.get_Value"><rule level="IGNORE" appender="Errors"/> </event_source>
+<event_source prefix="Platform.RadOR.RepositoryCore.LookupObject"><rule level="IGNORE" appender="Errors"/> </event_source>
+<event_source prefix="GLConfiguration"><rule level="IGNORE" appender="Errors"/> </event_source>
+<event_source prefix="Platform.WaveServiceProduction.MemoryContext.get_aspBased"><rule level="IGNORE" appender="Errors"/> </event_source>
+
+	</event_source_rules>
+
+</log4rad>
+
