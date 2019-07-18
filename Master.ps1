@@ -6,10 +6,6 @@ $MASTER_LOG_FILE=$BASE_DIR + "\BuildConfiguration\output" + "Master_Log-"+$ddMMy
 
 $sourceFile = 'AutoScripts.zip'
 
-$template1='logconfig_template.xml'
-$template2='rpweb_template.xml'
-$template3='WebGlobalsettings_template'
-
 $targetFolder = $BASE_DIR + '\BuildConfiguration'
 
 [System.Reflection.Assembly]::LoadWithPartialName('System.IO.Compression.FileSystem')
