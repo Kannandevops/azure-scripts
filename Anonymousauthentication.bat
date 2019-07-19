@@ -1,0 +1,1 @@
+%WINDIR%\system32\inetsrv\appcmd.exe set config "ESO-DEMO" -section:system.webServer/security/authentication/anonymousAuthentication /enabled:"True" /userName:".\azpoc" /password:"Azure@123456" /commit:apphost
