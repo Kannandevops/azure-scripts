@@ -32,7 +32,7 @@ cd $BASE_DIR"\BuildConfiguration"
 
 .\TomcatRestart.ps1
 
-write-output "$(get-date) : Starting the tomcat reset  " | out-file $MASTER_LOG_FILE -Append -Force;  
+write-output "$(get-date) : Starting the health test  " | out-file $MASTER_LOG_FILE -Append -Force;  
 
 cd $BASE_DIR"\BuildConfiguration"
 
