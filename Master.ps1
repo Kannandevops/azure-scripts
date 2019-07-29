@@ -2,7 +2,7 @@
 
 $ddMMyyyy=(Get-Date).ToString('dd-MM-yyyy');
 
-$MASTER_LOG_FILE=$BASE_DIR + "\BuildConfiguration\output" + "Master_Log-"+$ddMMyyyy +".log"
+$MASTER_LOG_FILE=$BASE_DIR + "\BuildConfiguration\output1" + "Master_Log-"+$ddMMyyyy +".log"
 
 $sourceFile = 'AutoScripts.zip'
 
