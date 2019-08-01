@@ -1,9 +1,9 @@
 ﻿
 ##############################Extracting the Autoscripts.zip######################################
 
-$servername=$env:COMPUTERNAME
-$Localfiles = "\\jdaautocf000000\c$\config"
-$Remotefiles = "\\$env:COMPUTERNAME\c$\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.5\Downloads\1\"
+
+$Localfiles = "\\jdaautocf000000\c$\config\*"
+$Remotefiles = "C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.5\Downloads\1"
 copy-item -path $Localfiles -Destination $Remotefiles -Recurse
 
 sleep 20
