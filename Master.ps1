@@ -1,17 +1,20 @@
-﻿
+
 ##############################Extracting the Autoscripts.zip######################################
 
-$Localfiles = "\\jdaautocf000000\c$\config\*"
-$Remotefiles = "C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.5\Downloads\1"
-copy-item -path $Localfiles -Destination $Remotefiles -Recurse  -force
-
-sleep 20
 
 $BASE_DIR=(Resolve-Path .\).Path
 
 $ddMMyyyy=(Get-Date).ToString('dd-MM-yyyy');
 
 $MASTER_LOG_FILE=$BASE_DIR + "\BuildConfiguration\output" + "Master_Log-"+$ddMMyyyy +".log"
+
+
+$Localfiles = "\\jdaautocf000000\c$\config"
+$Remotefiles = "C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.5\Downloads\1\"
+copy-item -path $Localfiles -Destination $Remotefiles -Recurse  -Force
+Get-ChildItem -Path "C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.5\Downloads\1\config" -recurse | Move-Item -Destination "$remotefiles"
+
+sleep 20
 
 $sourceFile = 'AutoScripts.zip'
 
