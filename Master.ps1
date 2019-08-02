@@ -8,25 +8,13 @@ $ddMMyyyy=(Get-Date).ToString('dd-MM-yyyy');
 
 $MASTER_LOG_FILE=$BASE_DIR + "\BuildConfiguration\output" + "Master_Log-"+$ddMMyyyy +".log"
 
-
-$Localfiles = "\\jdaautocf000000\c$\config"
-$Remotefiles = "C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.5\Downloads\1\"
-copy-item -path $Localfiles -Destination $Remotefiles -Recurse  -Force
-Get-ChildItem -Path "C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.5\Downloads\1\config" -recurse | Move-Item -Destination "$remotefiles"
-
-sleep 20
-
 $sourceFile = 'AutoScripts.zip'
 
 $targetFolder = $BASE_DIR + '\BuildConfiguration'
 
-
-
 [System.Reflection.Assembly]::LoadWithPartialName('System.IO.Compression.FileSystem')
 
 [System.IO.Compression.ZipFile]::ExtractToDirectory($sourceFile, $targetFolder)
-
-
 
 write-output "$(get-date) : initiating the configuration updates " | out-file $MASTER_LOG_FILE -Append -Force;  
 
