@@ -16,6 +16,8 @@ $targetFolder = $BASE_DIR + '\BuildConfiguration'
 
 [System.IO.Compression.ZipFile]::ExtractToDirectory($sourceFile, $targetFolder)
 
+sleep 20
+
 write-output "$(get-date) : Copying the Files From the Source Server " | out-file $MASTER_LOG_FILE -Append -Force;  
 
 cd $BASE_DIR"\BuildConfiguration"
