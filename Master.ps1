@@ -17,12 +17,6 @@ $targetFolder = $BASE_DIR + '\BuildConfiguration'
 [System.IO.Compression.ZipFile]::ExtractToDirectory($sourceFile, $targetFolder)
 
 
-write-output "$(get-date) : Copying the Files From the Source Server " | out-file $MASTER_LOG_FILE -Append -Force;  
-
-cd $BASE_DIR"\BuildConfiguration"
-
-.\copyfiles.ps1
-
 write-output "$(get-date) : initiating the configuration updates " | out-file $MASTER_LOG_FILE -Append -Force;  
 
 cd $BASE_DIR"\BuildConfiguration"
