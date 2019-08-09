@@ -1,2 +1,2 @@
 ﻿set-location -path 'c:\scripts'
-powershell.exe "c:\scripts\Master.ps1"
+powershell.exe -ExecutionPolicy Unrestricted -file "c:\scripts\Master.ps1"
